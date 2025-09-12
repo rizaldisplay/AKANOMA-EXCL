@@ -1,0 +1,75 @@
+/* CSS Loading Screen */
+.loadingOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #8B0000;
+    /* Mengembalikan warna ke #8B0000 sesuai permintaan sebelumnya */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    color: #000000;
+    transform: translateY(0%);
+    transition: transform 0.8s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+.loadingOverlay.slideUp {
+    transform: translateY(-100%);
+}
+
+.loadingContainer {
+    text-align: center;
+}
+
+.loadingText {
+    font-family: 'Cinzel', serif;
+    font-size: 7rem;
+    color: #000000;
+    font-weight: 600;
+    line-height: 1;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    /* PROPERTI BARU UNTUK TRANSISI TEKS */
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    transition-delay: 0.2s;
+    /* Sedikit jeda sebelum teks muncul */
+}
+
+/* CLASS BARU UNTUK MEMICU TRANSISI TEKS */
+.loadingText.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media (max-width: 600px) {
+    .loadingText {
+        font-size: 4.5rem;
+    }
+}
+
+/* Styling konten utama */
+.mainContainer {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+}
+
+.title {
+    margin: 0;
+    line-height: 1.15;
+    font-size: 4rem;
+}
+
+.description {
+    line-height: 1.5;
+    font-size: 1.5rem;
+}

@@ -1,0 +1,137 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.2rem 2.5rem;
+    background-color: #111;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    border-bottom: 1px solid #333;
+    opacity: 0;
+    transform: translateY(-100%);
+    animation: fadeInDown 0.5s ease-out 0.3s forwards;
+}
+
+@keyframes fadeInDown {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.mainNav {
+    display: flex;
+    gap: 2rem;
+}
+
+.navLink {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #a1a1a6;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.navLink:hover {
+    color: #fff;
+}
+
+.headerActions {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.langSwitcher {
+    position: relative;
+}
+
+.langButton {
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #a1a1a6;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: color 0.2s ease;
+}
+
+.langButton:hover {
+    color: #fff;
+}
+
+.flagIcon {
+    width: 20px;
+    height: 15px;
+    border: 1px solid #444;
+    object-fit: cover;
+}
+
+.dropdownMenu {
+    position: absolute;
+    top: calc(100% + 10px);
+    right: 0;
+    background-color: #222;
+    border-radius: 8px;
+    border: 1px solid #444;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    z-index: 1001;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    pointer-events: none;
+}
+
+.dropdownMenu.open {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+.dropdownItem {
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: #a1a1a6;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.5rem 1rem;
+    font-size: 0.95rem;
+    border-radius: 6px;
+    text-align: left;
+    width: 100%;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.dropdownItem:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.ctaButton {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 999px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.ctaButton:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
