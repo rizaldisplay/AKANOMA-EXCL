@@ -92,7 +92,7 @@ const Header: React.FC = () => {
             />
             <Link
               href={"https://calendly.com/"}
-              className="hidden lg:block text-black bg-primary/100 border border-primary hover:bg-primary/80 rounded-lg font-semibold py-2.5 px-5 z-50"
+              className="hidden lg:block text-[#D9D9D9] bg-primary/100 border border-primary hover:bg-primary/80 rounded-lg font-semibold py-2.5 px-5 z-50"
             >
               Book a call
             </Link>
