@@ -1,26 +1,21 @@
 export const GlobalReachData = [
     {
         id: 1,
-        count: 6,
-        postfix:"M+",
-        title: "Active users"
+        count: 90,
+        postfix:"%",
+        title: "Trader kehilangan modal dalam 2 tahun pertama"
     },
     {
         id: 2,
-        count: 247,
-        title: "Users support"
+        count: 80,
+        postfix:"%",
+        title: "Kegagalan trading disebabkan faktor psikologi"
     },
     {
         id: 3,
-        count: 160,
-        postfix:"+",
-        title: "Countries"
-    },
-    {
-        id: 4,
-        count: 22,
+        count: 6,
         prefix: "$",
-        postfix:"B+",
-        title: "Trade volume"
+        postfix:"T",
+        title: "Volume harian pasar forex global"
     },
 ]

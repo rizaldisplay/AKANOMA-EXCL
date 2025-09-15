@@ -30,12 +30,15 @@ const Portfolio = () => {
                 Crypto landing page <span className='text-primary'>template</span>
               </p>
               <h2 className='text-white sm:text-40 text-30 mb-4 font-medium'>
-                Create your cryptocurrency portfolio today
+                Bukan Spekulasi.
+                Ini Sains Keseimbangan Pasar.
               </h2>
             </div>
+            <p className='text-muted/60 text-18 mb-3'>
+              EA Akanoma menggunakan pendekatan Non-Speculative Trading Action— kami tidak menebak arah pasar, melainkan memanfaatkan ketidakseimbangan harga yang terjadi secara alamiah.
+            </p>
             <p className='text-muted/60 text-18'>
-              Coinbase has a variety of features that make it the best place
-              to start trading.
+              Hasil? Profit yang stabil dan terukur, tanpa bergantung pada prediksi arah pasar atau analisis fundamental yang subjektif. Ini adalah trading berdasarkan matematika, bukan emosi.
             </p>
 
             <table className='w-full sm:w-[80%] mt-10'>
@@ -44,12 +47,9 @@ const Portfolio = () => {
                   <tr key={index} className='border-b border-dark_border/10'>
                     <td className='py-5'>
                       <div className='bg-primary/20 p-3 rounded-full w-fit'>
-                        <Image
-                          src={item.image}
-                          alt={item.title}
-                          width={24}
-                          height={24}
-                        />
+                        <div className='text-white w-0 h-6'>
+                          {item.image}
+                        </div>
                       </div>
                     </td>
                     <td className='py-5'>

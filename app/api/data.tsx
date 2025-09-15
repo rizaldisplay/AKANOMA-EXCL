@@ -1,4 +1,5 @@
 import { title } from "process";
+import { JSX } from "react";
 
 export const footerlabels: { label: string; herf: string }[] = [
   { label: "Terms", herf: "#" },
@@ -85,30 +86,34 @@ export const pricedeta: {
   },
 ];
 
-export const portfolioData: { image: string; title: string }[] = [
+export const portfolioData: { image: string | JSX.Element; title: string; text: string }[] = [
   {
-    image: "/images/portfolio/portfolio-icon-1.svg",
-    title: "Manage your portfolio",
+    image: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-chart-pie-icon lucide-chart-pie"><path d="M21 12c.552 0 1.005-.449.95-.998a10 10 0 0 0-8.953-8.951c-.55-.055-.998.398-.998.95v8a1 1 0 0 0 1 1z"/><path d="M21.21 15.89A10 10 0 1 1 8 2.83"/></svg>,
+    title: "Profit dari Equilibrium",
+    text: "Menghasilkan keuntungan konsisten bahkan ketika pasar bergerak sideways atau dalam kondisi seimbang."
   },
   {
-    image: "/images/portfolio/portfolio-icon-2.svg",
-    title: "Vault protection",
+    image: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-clock-arrow-up-icon lucide-clock-arrow-up"><path d="M12 6v6l1.56.78"/><path d="M13.227 21.925a10 10 0 1 1 8.767-9.588"/><path d="m14 18 4-4 4 4"/><path d="M18 22v-8"/></svg>,
+    title: "Eksekusi Milidetik",
+    text: "Algoritma canggih mendeteksi dan mengeksekusi peluang dalam waktu yang tidak mungkin dicapai trader manual."
   },
   {
-    image: "/images/portfolio/portfolio-icon-3.svg",
-    title: "Mobile apps",
+    image: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-brain-circuit-icon lucide-brain-circuit"><path d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z"/><path d="M9 13a4.5 4.5 0 0 0 3-4"/><path d="M6.003 5.125A3 3 0 0 0 6.401 6.5"/><path d="M3.477 10.896a4 4 0 0 1 .585-.396"/><path d="M6 18a4 4 0 0 1-1.967-.516"/><path d="M12 13h4"/><path d="M12 18h6a2 2 0 0 1 2 2v1"/><path d="M12 8h8"/><path d="M16 8V5a2 2 0 0 1 2-2"/><circle cx="16" cy="13" r=".5"/><circle cx="18" cy="3" r=".5"/><circle cx="20" cy="21" r=".5"/><circle cx="20" cy="8" r=".5"/></svg>,
+    title: "Zero Emosi",
+    text: "Menghilangkan sepenuhnya faktor psikologi dan emosi dari setiap keputusan trading."
+  },
+  {
+    image: <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-sigma-icon lucide-sigma"><path d="M18 7V5a1 1 0 0 0-1-1H6.5a.5.5 0 0 0-.4.8l4.5 6a2 2 0 0 1 0 2.4l-4.5 6a.5.5 0 0 0 .4.8H17a1 1 0 0 0 1-1v-2"/></svg>,
+    title: "Konsistensi Matematis",
+    text: "Berdasarkan perhitungan ilmiah, bukan spekulasi atau analisis subjektif."
   },
 ];
 
 export const upgradeData: { title: string }[] = [
-  { title: "100% Secure" },
-  { title: "Free figma file" },
-  { title: "A fraction of the cost" },
-  { title: "Powerful in performance" },
-  { title: "More durable" },
-  { title: "Designed for crypto" },
-  { title: "Easier to use" },
-  { title: " 100% free framer template" },
+  { title: "Potensi 100% profit tahunan " },
+  { title: "24/7 Operasional aktif" },
+  { title: "35% Max floating loss" },
+  { title: "0% Intervensi emosi" },
 ];
 
 export const perksData: {

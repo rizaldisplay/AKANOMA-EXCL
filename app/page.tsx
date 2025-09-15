@@ -5,6 +5,8 @@ import TimeLine from '../components/Home/timeline'
 import Platform from '../components/Home/platform'
 import Portfolio from '../components/Home/portfolio'
 import Upgrade from '../components/Home/upgrade'
+import Services from '../components/Home/Services'
+import Team from '../components/Home/TrainerClass'
 import Perks from '../components/Home/perks'
 import { Metadata } from 'next'
 import GlobalReach from '../components/Home/GlobalReach'
@@ -19,11 +21,14 @@ export default function Home() {
       <Hero />
       <Work />
       <GlobalReach/>
+      {/* <Portfolio /> */}
+      {/* <Perks /> */}
+      <Services />
       <TimeLine />
       <Platform />
-      <Portfolio />
       <Upgrade />
-      <Perks />
+      <Team />
+    
       <Faq/>
     </main>
   )

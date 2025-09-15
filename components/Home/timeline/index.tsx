@@ -13,6 +13,7 @@ const TimeLine = () => {
     animate: inView ? { y: 0, opacity: 1 } : { y: '-100%', opacity: 0 },
     transition: { duration: 0.6, delay: 0.4 },
   }
+
   return (
     <section className='md:pt-40 pt-9' id='development'>
       <div className='container lg:px-16 px-4'>
@@ -25,9 +26,14 @@ const TimeLine = () => {
               <p className='text-white font-medium'>
                 We deliver <span className='text-primary'>best solution</span>
               </p>
-              <h2 className='text-white sm:text-40 text-30 font-medium lg:w-80% mx-auto mb-20'>
-                One application with multiple options to give you freedom of buying & selling
+              <h2 className='text-white sm:text-40 text-30 font-medium lg:w-80% mx-auto'>
+                Bukan Spekulasi Ini Sains Keseimbangan Pasar
               </h2>
+              <p className='text-[#D9D9D9] lg:w-80% mx-auto mb-20'>
+                EA Akanoma menggunakan pendekatan Non-Speculative Trading Action— kami tidak menebak arah pasar, melainkan memanfaatkan ketidakseimbangan harga yang terjadi secara alamiah.
+
+                Hasil? Profit yang stabil dan terukur, tanpa bergantung pada prediksi arah pasar atau analisis fundamental yang subjektif. Ini adalah trading berdasarkan matematika, bukan emosi.
+              </p>
             </div>
           </motion.div>
           <motion.div
@@ -46,9 +52,9 @@ const TimeLine = () => {
               </div>
               <div className='absolute lg::top-40 top-36 lg:left-0 -left-20 w-72 flex items-center gap-6'>
                 <div className='text-right'>
-                  <h5 className='text-muted text-28 mb-3'>Planning</h5>
+                  <h5 className='text-muted text-28 mb-3'>Profit dari Equilibrium</h5>
                   <p className='text-18 text-muted/60'>
-                    Map the crypto projects scope with framer template
+                    Untung konsisten dalam kondisi sideways
                   </p>
                 </div>
                 <div className='bg-light_grey/45 backdrop-blur-xs px-6 py-2 h-fit rounded-full'>
@@ -71,17 +77,17 @@ const TimeLine = () => {
                   />
                 </div>
                 <div className='text-left'>
-                  <h5 className='text-muted text-28 mb-3'>Refinement</h5>
+                  <h5 className='text-muted text-28 mb-3'>Scale and Konsistensi Matematis</h5>
                   <p className='text-18 text-muted/60'>
-                  Refine & improve your crypto landing page
+                    Berdasarkan perhitungan ilmiah, bukan spekulasi atau analisis subjektif.
                   </p>
                 </div>
               </div>
               <div className='absolute lg:bottom-48 bottom-36 lg:left-0 -left-20 w-72 flex items-center gap-6'>
                 <div className='text-right'>
-                  <h5 className='text-muted text-28 mb-3'>Prototype</h5>
+                  <h5 className='text-muted text-28 mb-3'>Zero Emosi</h5>
                   <p className='text-18 text-muted/60'>
-                  Build crypto website test for your product
+                    Keputusan trading murni logika, tanpa emosi
                   </p>
                 </div>
                 <div className='bg-light_grey/45 backdrop-blur-xs px-6 py-2 h-fit rounded-full'>
@@ -106,10 +112,10 @@ const TimeLine = () => {
                 </div>
                 <div className='text-left'>
                   <h5 className='text-muted text-nowrap text-28 mb-3'>
-                    Support
+                    Eksekusi Milidetik
                   </h5>
                   <p className='text-18 text-muted/60'>
-                  Deploy product live and ensure expert support
+                    Algoritma canggih eksekusi peluang lebih cepat dari trader manual
                   </p>
                 </div>
               </div>

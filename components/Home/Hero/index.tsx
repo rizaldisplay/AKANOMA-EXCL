@@ -4,6 +4,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import BuyCrypto from "./buy-form";
 import SellCrypto from "./sell-form";
+import { ArrowRight } from 'lucide-react';
 import CardSlider from "./slider";
 import { useEffect, useRef, useState, useCallback } from "react";
 import { Icon } from "@iconify/react/dist/iconify.js";
@@ -72,12 +73,13 @@ const Hero = () => {
                   </span>
                 </div>
               </div>
-              <h1 className="font-medium xl:text-[72px] lg:text-6xl md:text-54 sm:text-5xl text-4xl md:text-start text-center text-white">
-                Fast and Secure Cryptocurrency Exchange
+              <h1 className="xl:text-[72px] lg:text-6xl md:text-54 sm:text-5xl text-4xl md:text-start text-center font-extrabold tracking-tight leading-tight bg-gradient-to-r from-white via-red-400 to-red-600 bg-clip-text text-transparent">
+                Trading No Drama
               </h1>
               <p className="text-white">
-                Trade cryptocurrencies with ease, security, and advanced
-                features on our cutting-edge platform.
+                Ciptakan pertumbuhan konsisten melalui strategi 
+                  non-spekulatif berbasis algoritma, yang dirancang untuk 
+                    trader baru maupun berpengalaman.
               </p>
             </div>
             <div className="flex items-center md:justify-start justify-center gap-8">
@@ -86,19 +88,14 @@ const Hero = () => {
                 className="bg-primary hover:bg-primary/80 flex items-center gap-2 border border-primary rounded-lg font-semibold text-[#D9D9D9] py-3 px-7 cursor-pointer"
               >
                 Explore More
-                <Image
-                  src={"/images/icons/icon-arrow.svg"}
-                  alt="arrow-icon"
-                  width={20}
-                  height={20}
-                />
+                <ArrowRight  />
               </Link>
             </div>
           </motion.div>
           <motion.div {...rightAnimation} className="">
             <div className="w-full h-full">
               <Image
-                src="/images/hero/hero-banner-img.png"
+                src="/images/hero/hero-banner-image-v2.png"
                 alt="Banner"
                 width={584}
                 height={582}
@@ -107,12 +104,12 @@ const Hero = () => {
             </div>
           </motion.div>
         </div>
-        <BrandLogo />
-        <CardSlider />
+        {/* <BrandLogo /> */}
+        {/* <CardSlider /> */}
       </div>
 
       {/* Modals for Buy and Sell */}
-      {isBuying && (
+      {/* {isBuying && (
         <div className="fixed top-0 left-0 w-full h-full bg-black/50 flex items-center justify-center z-50">
           <div
             ref={BuyRef}
@@ -131,8 +128,8 @@ const Hero = () => {
             <BuyCrypto />
           </div>
         </div>
-      )}
-      {isSelling && (
+      )} */}
+      {/* {isSelling && (
         <div className="fixed top-0 left-0 w-full h-full bg-black/50 flex items-center justify-center z-50">
           <div
             ref={SellRef}
@@ -151,7 +148,7 @@ const Hero = () => {
             <SellCrypto />
           </div>
         </div>
-      )}
+      )} */}
     </section>
   );
 };

@@ -5,28 +5,36 @@ import React, { useState } from 'react';// Optional: install lucide-react icons
 
 const faqData = [
     {
-        question: "What is Crypgo?",
-        answer: "Crypgo is a cryptocurrency exchange that allows users to trade 100+ cryptocurrencies worldwide.",
+        question: "Berapa setoran minimum untuk memulai?",
+        answer: "Setoran minimum yang diperlukan adalah $2.000. Jumlah ini dirancang untuk memastikan EA dapat beroperasi optimal dengan manajemen risiko yang tepat dan memberikan ruang yang cukup untuk strategi trading kami.",
     },
     {
-        question: "Is Crypgo available worldwide?",
-        answer: "Yes, Crypgo is accessible from most countries around the globe.",
+        question: "Seberapa besar risiko yang dikelola oleh EA?",
+        answer: "EA Akanoma menerapkan tingkat toleransi floating loss maksimal 35% dari total ekuitas. Ini artinya dalam skenario terburuk, akun Anda tidak akan mengalami kerugian lebih dari 35%. Sistem kami dilengkapi dengan multiple safety mechanism untuk melindungi modal Anda.",
     },
     {
-        question: "Which cryptocurrencies are supported on Crypgo?",
-        answer: "We support Bitcoin, Ethereum, Litecoin, and many more. Over 100 cryptocurrencies are available.",
+        question: "Apakah saya bisa melakukan trading manual di akun yang sama?",
+        answer: "Tidak, intervensi manual dilarang keras untuk memastikan kinerja optimal EA. Sistem kami dirancang dengan algoritma yang presisi, dan setiap campur tangan manual dapat mengganggu keseimbangan strategi dan mengurangi efektivitas secara keseluruhan.",
     },
     {
-        question: "Is my personal information secure with Crypgo?",
-        answer: "Yes, we prioritize your security with advanced encryption and compliance protocols.",
+        question: "Bagaimana saya bisa memantau kinerja akun saya?",
+        answer: "Anda akan diberikan akses investor (read-only) untuk memantau kinerja akun secara real-time dan transparan. Melalui akses ini, Anda dapat melihat semua transaksi, profit/loss, dan statistik performa tanpa dapat melakukan intervensi pada trading.",
     },
     {
-        question: "Are there any deposit or withdrawal fees?",
-        answer: "Our fee structure is transparent. Visit our pricing page for detailed info.",
+        question: "Broker apa saja yang bisa saya gunakan?",
+        answer: "Untuk model Sharing Profit, Anda memiliki kebebasan penuh memilih broker yang Anda percayai. Untuk model Sewa EA, kami akan memberikan rekomendasi broker yang telah teruji kompatibel dengan sistem kami untuk memastikan performa optimal.",
     },
     {
-        question: "Does Crypgo offer advanced trading tools?",
-        answer: "Yes, Crypgo provides charts, APIs, and tools suitable for both beginners and professionals.",
+        question: "Bagaimana cara penarikan profit?",
+        answer: "Untuk model Sharing Profit, penarikan dilakukan secara bulanan setelah perhitungan laba bersih. Untuk model Sewa EA, Anda memiliki kontrol penuh atas akun dan dapat melakukan penarikan kapan saja sesuai kebijakan broker yang dipilih.",
+    },
+    {
+        question: "Apakah ada jaminan profit?",
+        answer: "Tidak ada sistem trading yang dapat menjamin profit 100%. Namun, EA Akanoma dirancang berdasarkan strategi non-spekulatif dengan track record yang konsisten. Kami fokus pada manajemen risiko yang ketat dan pertumbuhan yang sustainable.",
+    },
+    {
+        question: "Berapa lama kontrak kemitraan?",
+        answer: "Kontrak dapat disesuaikan dengan kebutuhan Anda. Untuk model Sewa EA, minimum 1 bulan dengan opsi perpanjangan. Untuk Sharing Profit, kami merekomendasikan minimum 3 bulan untuk melihat hasil optimal, dengan fleksibilitas perpanjangan jangka panjang.",
     },
 ];
 
@@ -42,9 +50,8 @@ const Faq = () => {
             <div className="container">
                 <div className=" mx-auto px-4">
                     <div className="text-center mb-10">
-                        <p className="text-green-400 uppercase text-sm">Popular questions</p>
-                        <h2 className="text-3xl md:text-4xl font-semibold mt-2">Learn more about Crypgo</h2>
-                        <p className="text-gray-400 mt-2">We accept 100+ cryptocurrencies around the world</p>
+                        <p className="text-red-400 uppercase text-sm">Popular questions</p>
+                        <h2 className="text-3xl md:text-4xl font-semibold mt-2">Learn more about Akanoma</h2>
                     </div>
                     <div className="space-y-4">
                         {faqData.map((item, index) => (

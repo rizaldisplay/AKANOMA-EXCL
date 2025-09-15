@@ -1,9 +1,9 @@
 import { HeaderItem } from "../../../../types/menu";
 
 export const headerData: HeaderItem[] = [
-  { label: "Features", href: "/#work" },
-  { label: "Benefits", href: "/#development" },
+  { label: "Why Akanoma", href: "/#upgrade" },
   { label: "Services", href: "/#portfolio" },
-  { label: "Why Crypgo", href: "/#upgrade" },
+  { label: "Features", href: "/#work" },
+  { label: "Training Class", href: "/#development" },
   { label: "FAQs", href: "/#faq" },
 ];

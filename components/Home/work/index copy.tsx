@@ -38,28 +38,52 @@ const Work = () => {
     <section className='' id='work'>
       <div className='container px-4 mx-auto lg:max-w-(--breakpoint-xl)'>
         <div ref={ref} className='grid grid-cols-12 items-center'>
-          {/* Diubah dari lg:col-span-7 menjadi lg:col-span-12 */}
           <motion.div
             {...bottomAnimation}
-            className='lg:col-span-12 col-span-12'> 
+            className='lg:col-span-7 col-span-12'>
             <div className='flex flex-col gap-3'>
               <p className="text-white font-medium">
                 Why choose <span className='text-primary'>Akanoma</span>
               </p>
-              <h1 className='sm:text-40 text-[30px] text-white lg:w-full md:w-70% font-medium'>
+              <h2 className='sm:text-40 text-20 text-white lg:w-full md:w-70% font-medium'>
                 Pasar Adalah Medan Perang Emosi.<br />
-                <span className='bg-gradient-to-r from-white to-white/70 bg-clip-text text-transparent'>Saatnya Bertindak Berbeda.</span>
-              </h1>
+                <span className='text-[#D9D9D9]'>Saatnya Bertindak Berbeda.</span>
+              </h2>
             </div>
             <div>
-              {/* Lebar paragraf juga diubah agar mengisi kontainer baru */}
-              <p className='text-white/70 mt-6 lg:w-full'>
+              <p className='text-white/70 mt-6 lg:w-10/12'>
                Pasar keuangan penuh dengan ketidakpastian. Jutaan trader berusaha membaca grafik dan berita, namun sering kali emosi justru menghancurkan modal.
               </p> <br />
-              <p className='text-white/70 lg:w-full'>
+              <p className='text-white/70 lg:w-10/12'>
               Faktanya, 80% kesuksesan trading ditentukan oleh psikologi—bukan hanya analisis. Ketakutan dan keserakahan adalah musuh utama.
               Kami di Akanoma juga pernah merasakannya. Kehilangan modal karena panic selling dan revenge trading. Dari pengalaman pahit itulah, kami membangun sistem yang berbeda—sebuah solusi yang menghapus faktor emosi dari persamaan trading.
               </p>
+            </div>
+            {/* <div className='grid md:grid-cols-2 gap-7 mt-11'>
+              {services.map((service, index) => (
+                <div key={index} className='flex items-center gap-5'>
+                  <div className='p-3 bg-light_grey/30 rounded-full'>
+                    <Image
+                      src={service.icon}
+                      alt={`${service.text} icon`}
+                      width={25}
+                      height={25}
+                    />
+                  </div>
+                  <p className='text-white font-medium'>{service.text}</p>
+                </div>
+              ))}
+            </div> */}
+          </motion.div>
+          <motion.div {...TopAnimation} className='lg:col-span-5 col-span-12'>
+            <div className='2xl:-mr-40 mt-9 flex justify-center'>
+              <Image
+                src='/images/work/img-work-with-us.png'
+                alt='image'
+                width={600}
+                height={425}
+                className='lg:w-full'
+              />
             </div>
           </motion.div>
         </div>

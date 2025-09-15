@@ -4,6 +4,7 @@ import { DM_Sans } from "next/font/google";
 import "./globals.css";
 import Header from "../components/Layout/Header";
 import Footer from "../components/Layout/Footer";
+import StickyFooter from "../components/Layout/StickyFooter";
 import { ThemeProvider } from "next-themes";
 import ScrollToTop from "../components/ScrollToTop";
 import Aoscompo from "../utils/aos";
@@ -43,6 +44,7 @@ export default function RootLayout({
               <Header />
               {children}
               <Footer />
+              <StickyFooter />
             </Aoscompo>
             <ScrollToTop />
           </ThemeProvider>

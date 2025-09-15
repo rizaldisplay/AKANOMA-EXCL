@@ -10,29 +10,31 @@ const Upgrade = () => {
           <div>
             <p className='text-white font-medium'>Crypgo <span className='text-primary'>upgrade</span></p>
             <h2 className='text-white sm:text-40 text-30  font-medium mb-5'>
-              Upgrade your crypto business
+              Pertumbuhan Stabil, Bukan Keberuntungan Sesaat
             </h2>
             <p className='text-muted/60 text-18 mb-7'>
-              Get faster, safer, more affordable cloud object storage with
-              no centeral point of failure.
+              Grafik kinerja EA Akanoma menunjukkan pertumbuhan ekuitas yang konsisten dari waktu ke waktu— bukti nyata dari strategi non-spekulatif yang kami terapkan.
             </p>
-            <div className='grid sm:grid-cols-2  text-nowrap gap-5'>
-              {upgradeData.map((item, index) => (
-                <div key={index} className='flex gap-5'>
-                  <div>
+            <ul className="mt-8 grid gap-4 sm:grid-cols-2">
+              {upgradeData.map((item, idx) => (
+                <li
+                  key={idx}
+                  className="group flex items-start gap-3 rounded-2xl border border-white/10 bg-white/5 p-4 transition-colors hover:border-white/20 hover:bg-white/10"
+                >
+                  <span className="mt-0.5 rounded-full bg-emerald-400/15 p-1.5 ring-1 ring-emerald-400/30">
                     <Icon
-                      icon='la:check-circle-solid'
-                      width='24'
-                      height='24'
-                      className='text-white group-hover:text-primary'
+                      icon="la:check-circle"
+                      width="22"
+                      height="22"
+                      className="text-emerald-400 transition-transform group-hover:scale-110"
                     />
-                  </div>
+                  </span>
                   <div>
-                    <h4 className='text-18 text-muted/60'>{item.title}</h4>
+                    <h3 className="text-sm font-medium text-white/90 mt-2">{item.title}</h3>
                   </div>
-                </div>
+                </li>
               ))}
-            </div>
+            </ul>
           </div>
           <div>
             <div className='ml-0 lg:ml-7'>
