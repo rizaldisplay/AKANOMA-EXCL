@@ -12,7 +12,7 @@ import { Metadata } from 'next'
 import GlobalReach from '../components/Home/GlobalReach'
 import Faq from '../components/Home/Faq'
 export const metadata: Metadata = {
-  title: 'CrypGo',
+  title: 'Akanoma Exclusive - Mitra Tepercaya Trader Indonesia',
 }
 
 export default function Home() {
