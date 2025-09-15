@@ -219,9 +219,6 @@ const App = () => {
               </span>
               <div>
                 <h3 className="text-sm font-medium text-white/90 mt-2">{item.title}</h3>
-                {item.desc ? (
-                  <p className="mt-1 text-xs text-white/60">{item.desc}</p>
-                ) : null}
               </div>
             </li>
           ))}
