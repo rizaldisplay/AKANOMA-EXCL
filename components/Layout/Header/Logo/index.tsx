@@ -3,14 +3,15 @@ import Link from "next/link";
 
 const Logo: React.FC = () => {
   return (
-    <Link href="/">
+    <Link href="/" className="block">
       <Image
         src="/images/logo/Akanoma.webp"
         alt="logo"
         width={135}
         height={32}
-        style={{ width: "auto", height: "auto" }}
+        className="w-32 md:w-40 h-auto"
         quality={100}
+        priority
       />
     </Link>
   );
