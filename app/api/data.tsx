@@ -110,10 +110,17 @@ export const portfolioData: { image: string | JSX.Element; title: string; text: 
 ];
 
 export const upgradeData: { title: string }[] = [
-  { title: "Potensi 100% profit tahunan " },
+  { title: "Potensi 10% profit bulanan " },
   { title: "24/7 Operasional aktif" },
   { title: "35% Max floating loss" },
   { title: "0% Intervensi emosi" },
+];
+
+export const classData: { title: string }[] = [
+  { title: "Pelajari stop out" },
+  { title: "Perilaku trading" },
+  { title: "Dapatkan profit harian" },
+  { title: "Closing every friday" },
 ];
 
 export const perksData: {
@@ -150,26 +157,26 @@ export const timelineData: {
 }[] = [
   {
     icon: "/images/timeline/icon-planning.svg",
-    title: "Planning",
-    text: "Map the project's scope and architecture",
+    title: "Profit dari Equilibrium",
+    text: "Untung konsisten dalam kondisi sideways",
     position: "md:top-0 md:left-0",
   },
   {
     icon: "/images/timeline/icon-refinement.svg",
-    title: "Refinement",
-    text: "Refine and improve your solution",
+    title: "Zero Emosi",
+    text: "Keputusan trading murni logika, tanpa emosi",
     position: "md:top-0 md:right-0",
   },
   {
     icon: "/images/timeline/icon-prototype.svg",
-    title: "Prototype",
-    text: "Build a working prototype to test your product",
+    title: "Scale and Konsistensi Matematis",
+    text: "Berdasarkan perhitungan ilmiah, bukan spekulasi atau analisis subjektif.",
     position: "md:bottom-0 md:left-0",
   },
   {
     icon: "/images/timeline/icon-support.svg",
-    title: "Support",
-    text: "Deploy the product and ensure full support by us",
+    title: "Eksekusi Milidetik",
+    text: "Algoritma canggih eksekusi peluang lebih cepat dari trader manual",
     position: "md:bottom-0 md:right-0",
   },
 ];

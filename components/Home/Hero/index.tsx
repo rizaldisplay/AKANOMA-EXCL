@@ -95,7 +95,7 @@ const Hero = () => {
           <motion.div {...rightAnimation} className="">
             <div className="w-full h-full">
               <Image
-                src="/images/hero/hero-banner-image-v2.png"
+                src="/images/hero/hero-banner-image-v2.webp"
                 alt="Banner"
                 width={584}
                 height={582}
@@ -104,7 +104,7 @@ const Hero = () => {
             </div>
           </motion.div>
         </div>
-        {/* <BrandLogo /> */}
+        <BrandLogo />
         {/* <CardSlider /> */}
       </div>
 

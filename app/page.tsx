@@ -28,7 +28,6 @@ export default function Home() {
       <Platform />
       <Upgrade />
       <Team />
-    
       <Faq/>
     </main>
   )

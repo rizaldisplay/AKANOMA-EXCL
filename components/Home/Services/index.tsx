@@ -126,7 +126,7 @@ const App = () => {
             transition={{ duration: 1.0, delay: 0.2 }}>
             <div className='flex flex-col gap-4'>
               <p className='text-white font-medium'>
-                We deliver <span className='text-primary'>best solution</span>
+                our <span className='text-red-500'>best service</span>
               </p>
               <h2 className='bg-gradient-to-r from-white to-white/70 bg-clip-text text-transparent sm:text-40 text-30 font-medium lg:w-80% mx-auto'>
                 Pilih Model Kemitraan Kami

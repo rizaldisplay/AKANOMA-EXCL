@@ -44,9 +44,9 @@ const Work = () => {
             className='lg:col-span-12 col-span-12'> 
             <div className='flex flex-col gap-3'>
               <p className="text-white font-medium">
-                Why choose <span className='text-primary'>Akanoma</span>
+                Why choose <span className='text-red-500'>Akanoma</span>
               </p>
-              <h1 className='sm:text-40 text-[30px] text-white lg:w-full md:w-70% font-medium'>
+              <h1 className='sm:text-40 text-[30px] bg-gradient-to-r from-white to-white/70 bg-clip-text text-transparent lg:w-full md:w-70% font-medium'>
                 Pasar Adalah Medan Perang Emosi.<br />
                 <span className='bg-gradient-to-r from-white to-white/70 bg-clip-text text-transparent'>Saatnya Bertindak Berbeda.</span>
               </h1>

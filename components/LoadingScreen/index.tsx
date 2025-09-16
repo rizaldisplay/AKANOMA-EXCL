@@ -43,7 +43,7 @@ const LoadingScreen: FC<LoadingScreenProps> = ({ onFinished }) => {
   return (
     <div className={overlayClasses}>
       <div className={styles.loadingContainer}>
-        <h1 className={textClasses}>
+        <h1 className={`${textClasses} font-extrabold text-4xl sm:text-5xl md:text-6xl lg:text-7xl`}>
           akanoma
         </h1>
       </div>

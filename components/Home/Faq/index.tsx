@@ -50,8 +50,8 @@ const Faq = () => {
             <div className="container">
                 <div className=" mx-auto px-4">
                     <div className="text-center mb-10">
-                        <p className="text-red-400 uppercase text-sm">Popular questions</p>
-                        <h2 className="text-3xl md:text-4xl font-semibold mt-2">Learn more about Akanoma</h2>
+                        <p className="text-red-500 uppercase text-sm">Popular questions</p>
+                        <h2 className="text-3xl md:text-4xl font-semibold mt-2 bg-gradient-to-r from-white to-white/70 bg-clip-text text-transparent">Learn more about Akanoma</h2>
                     </div>
                     <div className="space-y-4">
                         {faqData.map((item, index) => (
@@ -72,7 +72,7 @@ const Faq = () => {
                                 </div>
 
                                 <div
-                                    className={`mt-2 text-gray-400 overflow-hidden transition-all duration-500 ease-in-out ${openIndex === index ? 'max-h-40 visible' : 'max-h-0 hidden'
+                                    className={`mt-2 text-gray-400 overflow-hidden transition-all duration-500 ease-in-out ${openIndex === index ? 'max-h-80 visible' : 'max-h-0 hidden'
                                         }`}
                                 >
                                     <p className="py-2">{item.answer}</p>

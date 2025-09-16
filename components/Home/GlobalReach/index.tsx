@@ -17,7 +17,7 @@ const GlobalReach = () => {
                             <div key={index} className='flex flex-col items-center border border-white/10 gap-4 bg-white/5 py-4 md:py-8 px-5 md:px-6 rounded-md'>
                                 <h3 ref={ref} className="text-3xl font-black text-white">
                                     {item.prefix && item.prefix}
-                                    {item.count == 247 ? "24/7" : inView ? <CountUp start={0} end={item.count} duration={3} /> : "0"}
+                                    {item.count == 247 ? "24/7" : inView ? <CountUp start={0} end={item.count} duration={3} decimals={item.decimal ? 1 : 0} /> : "0"}
                                     {item.postfix && item.postfix}
                                 </h3>
                                 <p className='dark:text-white/50 text-center'>{item.title}</p>

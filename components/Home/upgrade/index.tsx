@@ -8,8 +8,8 @@ const Upgrade = () => {
       <div className='container px-4'>
         <div className='grid lg:grid-cols-2 gap-10 items-center'>
           <div>
-            <p className='text-white font-medium'>Crypgo <span className='text-primary'>upgrade</span></p>
-            <h2 className='text-white sm:text-40 text-30  font-medium mb-5'>
+            <p className='text-white font-medium'>Strategy <span className='text-red-500'>growing</span></p>
+            <h2 className='bg-gradient-to-r from-white to-white/70 bg-clip-text text-transparent sm:text-40 text-30  font-medium mb-5'>
               Pertumbuhan Stabil, Bukan Keberuntungan Sesaat
             </h2>
             <p className='text-muted/60 text-18 mb-7'>

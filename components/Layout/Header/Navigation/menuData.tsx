@@ -4,6 +4,6 @@ export const headerData: HeaderItem[] = [
   { label: "Why Akanoma", href: "/#upgrade" },
   { label: "Services", href: "/#portfolio" },
   { label: "Features", href: "/#work" },
-  { label: "Training Class", href: "/#development" },
+  { label: "Traiding Balance", href: "/#development" },
   { label: "FAQs", href: "/#faq" },
 ];

@@ -53,6 +53,12 @@
     }
 }
 
+@media (max-width: 400px) {
+    .loadingText {
+        font-size: 3.5rem;
+    }
+}
+
 /* Styling konten utama */
 .mainContainer {
     min-height: 100vh;

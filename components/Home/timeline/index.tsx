@@ -24,9 +24,9 @@ const TimeLine = () => {
             transition={{ duration: 0.6 }}>
             <div className='flex flex-col gap-4'>
               <p className='text-white font-medium'>
-                We deliver <span className='text-primary'>best solution</span>
+                We deliver <span className='text-red-500'>best solution</span>
               </p>
-              <h2 className='text-white sm:text-40 text-30 font-medium lg:w-80% mx-auto'>
+              <h2 className='bg-gradient-to-r from-white to-white/70 bg-clip-text text-transparent sm:text-40 text-30 font-medium lg:w-80% mx-auto'>
                 Bukan Spekulasi Ini Sains Keseimbangan Pasar
               </h2>
               <p className='text-[#D9D9D9] lg:w-80% mx-auto mb-20'>
@@ -43,7 +43,7 @@ const TimeLine = () => {
             <div className='md:block hidden relative'>
               <div>
                 <Image
-                  src='/images/timeline/img-timeline.png'
+                  src='/images/timeline/img-timeline.webp'
                   alt='image'
                   width={1220}
                   height={1000}
