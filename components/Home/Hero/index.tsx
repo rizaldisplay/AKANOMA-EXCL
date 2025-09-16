@@ -104,7 +104,7 @@ const Hero = () => {
             </div>
           </motion.div>
         </div>
-        <BrandLogo />
+        {/* <BrandLogo /> */}
         {/* <CardSlider /> */}
       </div>
 
