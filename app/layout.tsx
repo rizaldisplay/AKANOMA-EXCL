@@ -1,55 +1,33 @@
-"use client";
+// app/[locale]/layout.tsx
 
 import { DM_Sans } from "next/font/google";
 import "./globals.css";
-import Header from "../components/Layout/Header";
-import Footer from "../components/Layout/Footer";
-import StickyFooter from "../components/Layout/StickyFooter";
-import { ThemeProvider } from "next-themes";
-import ScrollToTop from "../components/ScrollToTop";
-import Aoscompo from "../utils/aos";
-import { useEffect, useState } from "react";
-import LoadingScreen from "../components/LoadingScreen";
+import { NextIntlClientProvider } from "next-intl";
+import { getLocale, getMessages } from "next-intl/server";
+import ClientProviders from "../components/ClientProviders"; // <- Komponen baru
+
 const font = DM_Sans({ subsets: ["latin"] });
 
-export default function RootLayout({
-  children, 
+export default async function RootLayout({
+  children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const [loading, setLoading] = useState<boolean>(true);
+  const locale = await getLocale();
+  const messages = await getMessages(); // Diperlukan untuk NextIntlClientProvider
 
-  useEffect(() => {
-    // Mengembalikan kemampuan scroll setelah loading screen hilang
-    if (!loading) {
-      document.body.style.overflow = 'auto';
-    }
-  }, [loading]);
-
-  const handleLoadingFinished = (): void => {
-    setLoading(false);
-  };
+  console.log("Current locale:", locale);
 
   return (
-    <>
-      {loading && <LoadingScreen onFinished={handleLoadingFinished} />}
-      <html lang="en" suppressHydrationWarning>
-        <body className={`${font.className}`}>
-          <ThemeProvider
-            attribute="class"
-            enableSystem={true}
-            defaultTheme="system"
-          >
-            <Aoscompo>
-              <Header />
-              {children}
-              <Footer />
-              <StickyFooter />
-            </Aoscompo>
-            <ScrollToTop />
-          </ThemeProvider>
-        </body>
-      </html>
-    </>
+    <html lang={locale} suppressHydrationWarning>
+      <body className={`${font.className} bg-darkmode`}>
+        <NextIntlClientProvider locale={locale} messages={messages}>
+          {/* Semua logika client-side, termasuk loading screen, 
+            sekarang ditangani oleh komponen ClientProviders.
+          */}
+          <ClientProviders>{children}</ClientProviders>
+        </NextIntlClientProvider>
+      </body>
+    </html>
   );
 }

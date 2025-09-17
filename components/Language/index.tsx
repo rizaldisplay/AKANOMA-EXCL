@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from "react";
+import { useRouter } from "next/navigation";
 import styles from "./Language.module.css"; // Kita akan buat file CSS module untuk header
 // --- SVG Komponen untuk Bendera ---
 const IndonesianFlag = () => (
@@ -40,17 +41,33 @@ const EnglishFlag = () => (
 );
 // --- End of SVG Komponen ---
 
-// Tipe untuk props
-interface LanguageProps {
-  currentLang: "id" | "en";
-  onLangChange: (lang: "id" | "en") => void;
-}
-
-const Language: React.FC<LanguageProps> = ({ currentLang, onLangChange }) => {
+const Language = () => {
+  const [currentLang, setCurrentLang] = useState<'id' | 'en'>('en');
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
+  const router = useRouter();
 
+  
   useEffect(() => {
+    if (typeof window !== "undefined" && typeof document !== "undefined") {
+      const cookieLocal = document.cookie
+        .split(";")
+        .find((row) => row.trim().startsWith("AKANOMA_LOCALE="))
+        ?.split("=")[1];
+      if (cookieLocal && (cookieLocal === "en" || cookieLocal === "id")) {
+        selectLanguage(cookieLocal as "en" | "id");
+      } else {
+        const browserLocale =
+          typeof navigator !== "undefined" &&
+          navigator.language.slice(0, 2) === "id"
+            ? "id"
+            : "en";
+        selectLanguage(browserLocale);
+        document.cookie = `AKANOMA_LOCALE=${browserLocale};`;
+        router.refresh();
+      }
+    }
+
     const handleClickOutside = (event: MouseEvent) => {
       if (
         dropdownRef.current &&
@@ -64,9 +81,13 @@ const Language: React.FC<LanguageProps> = ({ currentLang, onLangChange }) => {
   }, []);
 
   const selectLanguage = (lang: "id" | "en") => {
-    onLangChange(lang);
+    setCurrentLang(lang);
     setDropdownOpen(false);
+    document.cookie = `AKANOMA_LOCALE=${lang};`;
+    router.refresh();
   };
+
+  console.log("Current Language:", currentLang);
 
   return (
     <div className={styles.headerActions}>

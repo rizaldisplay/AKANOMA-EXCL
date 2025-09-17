@@ -1,0 +1,134 @@
+{
+  "Hero": {
+    "heroDesc": "Achieve consistent growth through non-speculative, algorithm-based strategies, designed for both new and experienced traders."
+  },
+  "WhyAkanoma": {
+    "title": "The Market is an Emotional Battlefield.",
+    "subTitle": "It's Time to Act Differently.",
+    "desc": "Financial markets are full of uncertainty. Millions of traders try to read charts and news, but often emotions destroy their capital.",
+    "desc2": "In fact, 80% of trading success is determined by psychology—not just analysis. Fear and greed are the main enemies. We at Akanoma have felt it too. Losing capital due to panic selling and revenge trading. From that bitter experience, we built a different system—a solution that removes the emotional factor from the trading equation.",
+    "info1": "Traders lose capital in the first 2 years",
+    "info2": "Trading failures are caused by psychological factors",
+    "info3": "Global forex market daily volume"
+  },
+  "Services": {
+    "title": "Choose Our Partnership Model",
+    "subTitle": "Select the model that best suits your investment preferences and goals.",
+    "service1": {
+      "title": "EA Rental",
+      "desc": "For traders who want full control",
+      "price": "$7/day",
+      "priceDetail": "per $2000 minimum deposit",
+      "button": "Monitor EA from Investor Account",
+      "detail1": "Daily Rental Fee",
+      "detail2": "Initial Gas Fee: $140",
+      "detail3": "VPS & Installation: Separate",
+      "detail4": "Rebate: Provider's right",
+      "detail5": "Account Control: Full"
+    },
+    "service2": {
+      "title": "Profit Sharing",
+      "desc": "For long-term profitable partnerships",
+      "price": "10%",
+      "priceDetail": "of monthly net profit",
+      "button": "Choose Profit Sharing",
+      "detail1": "Profit Share",
+      "detail2": "Setup Fee: IDR 300,000",
+      "detail3": "Broker Choice: Flexible",
+      "detail4": "Withdrawal: Monthly",
+      "detail5": "Risk Management: Managed"
+    }
+  },
+  "Feateures": {
+    "title": "It's Not Speculation, It's the Science of Market Balance.",
+    "desc": "The Akanoma EA uses a Non-Speculative Trading Action approach—we don't guess the market's direction, but rather capitalize on naturally occurring price imbalances. The result? Stable and measurable profits, without relying on market direction predictions or subjective fundamental analysis. This is trading based on mathematics, not emotion.",
+    "feature": [
+      {
+        "icon": "/images/timeline/icon-planning.svg",
+        "title": "Profit from Equilibrium",
+        "text": "Consistent profits in a sideways market.",
+        "position": "md:top-0 md:left-0"
+      },
+      {
+        "icon": "/images/timeline/icon-refinement.svg",
+        "title": "Zero Emotion",
+        "text": "Trading decisions are purely logical, without emotion.",
+        "position": "md:top-0 md:right-0"
+      },
+      {
+        "icon": "/images/timeline/icon-prototype.svg",
+        "title": "Scale and Mathematical Consistency",
+        "text": "Based on scientific calculations, not speculation or subjective analysis.",
+        "position": "md:bottom-0 md:left-0"
+      },
+      {
+        "icon": "/images/timeline/icon-support.svg",
+        "title": "Millisecond Execution",
+        "text": "Advanced algorithms execute opportunities faster than manual traders.",
+        "position": "md:bottom-0 md:right-0"
+      }
+    ]
+  },
+  "Quotes": {
+    "title": "Trading is not about being right or wrong, but about risk management."
+  },
+  "Growing": {
+    "title": "Stable Growth, Not Momentary Luck",
+    "desc": "The performance chart of the Akanoma EA shows consistent equity growth over time—real evidence of the non-speculative strategy we apply.",
+    "point1": "Potential 10% monthly profit",
+    "point2": "24/7 Operational active",
+    "point3": "35% Max floating loss",
+    "point4": "0% Emotion intervention"
+  },
+  "TradingBalance": {
+    "title": "Trading Balance",
+    "desc": "Utilize 2 or more broker accounts with specific bonuses or benefits. Thus, when one account incurs a loss, funds will automatically transfer to the profitable account.",
+    "classData": [
+      { "title": "Learn About Stop Out" },
+      { "title": "Trading Behavior" },
+      { "title": "Earn Daily Profits" },
+      { "title": "0% Emotional Intervention" }
+    ],
+    "detail": "Visit our office for a 1-day free trial"
+  },
+  "FAQ": {
+    "title": "Learn More About Akanoma Exclusive",
+    "faqData": [
+      {
+        "question": "What is the minimum deposit to get started?",
+        "answer": "The minimum deposit required is $2,000. This amount is designed to ensure the EA can operate optimally with proper risk management and provide enough room for our trading strategy."
+      },
+      {
+        "question": "What is the maximum risk managed by the EA?",
+        "answer": "Akanoma EA applies a maximum floating loss tolerance level of 35% of the total equity. This means that in the worst-case scenario, your account will not incur losses greater than 35%. Our system is equipped with multiple safety mechanisms to protect your capital."
+      },
+      {
+        "question": "Can I perform manual trading on the same account?",
+        "answer": "No, manual intervention is strictly prohibited to ensure optimal EA performance. Our system is designed with precise algorithms, and any manual intervention can disrupt the balance of the strategy and reduce overall effectiveness."
+      },
+      {
+        "question": "How can I monitor my account performance?",
+        "answer": "You will be given investor access (read-only) to monitor your account performance in real-time and transparently. Through this access, you can view all transactions, profit/loss, and performance statistics without being able to intervene in the trading."
+      },
+      {
+        "question": "Which brokers can I use?",
+        "answer": "For the Profit Sharing model, you have full freedom to choose the broker you trust. For the EA Rental model, we will provide recommendations for brokers that have been tested for compatibility with our system to ensure optimal performance."
+      },
+      {
+        "question": "How can I withdraw profits?",
+        "answer": "For the Profit Sharing model, withdrawals are made monthly after net profit calculations. For the EA Rental model, you have full control over the account and can withdraw at any time according to the policies of the chosen broker."
+      },
+      {
+        "question": "Is there a profit guarantee?",
+        "answer": "No trading system can guarantee 100% profit. However, the Akanoma EA is designed based on a non-speculative strategy with a consistent track record. We focus on strict risk management and sustainable growth."
+      },
+      {
+        "question": "How long is the partnership contract?",
+        "answer": "The contract can be tailored to your needs. For the EA Rental model, the minimum is 1 month with an extension option. For Profit Sharing, we recommend a minimum of 3 months to see optimal results, with the flexibility for long-term extension."
+      }
+    ]
+  },
+  "Footer": {
+    "title": "To become the trusted partner for Indonesian traders through our accurate and disciplined non-speculative EA. We apply correlation trading, prioritize measurable risk management, and provide transparent education and community support for consistent capital growth."
+  }
+}

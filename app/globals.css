@@ -118,7 +118,9 @@
 }
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
+    background-color: #000510; /* Set default background from darkmode color */
+    color: #f5f7fa; /* Set default text color */
 }
 
 section {

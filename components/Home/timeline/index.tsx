@@ -43,7 +43,7 @@ const TimeLine = () => {
             <div className='md:block hidden relative'>
               <div>
                 <Image
-                  src='/images/timeline/img-timeline.webp'
+                  src='/images/timeline/trading.webp'
                   alt='image'
                   width={1220}
                   height={1000}

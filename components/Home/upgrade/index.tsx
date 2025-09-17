@@ -39,7 +39,7 @@ const Upgrade = () => {
           <div>
             <div className='ml-0 lg:ml-7'>
               <Image
-                src='/images/upgrade/img-upgrade.png'
+                src='/images/upgrade/img-trading.webp'
                 alt='image'
                 width={625}
                 height={580}
