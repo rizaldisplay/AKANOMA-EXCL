@@ -87,10 +87,7 @@ const Header: React.FC = () => {
           </nav>
 
           <div className="flex items-center gap-6">
-            <Language
-              currentLang="en"
-              onLangChange={(lang) => console.log(lang)}
-            />
+            <Language/>
             <Link
               href={"https://calendly.com/"}
               className="hidden lg:block text-[#D9D9D9] bg-primary/100 border border-primary hover:bg-primary/80 rounded-lg font-semibold py-2.5 px-5 z-50"
