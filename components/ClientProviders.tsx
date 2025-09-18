@@ -12,6 +12,7 @@ import StickyFooter from "./Layout/StickyFooter";
 import ScrollToTop from "./ScrollToTop";
 import Aoscompo from "../utils/aos";
 import LoadingScreen from "./LoadingScreen";
+import { useTranslations } from "next-intl";
 
 export default function ClientProviders({
   children,
@@ -19,6 +20,9 @@ export default function ClientProviders({
   children: React.ReactNode;
 }) {
   const [loading, setLoading] = useState<boolean>(true);
+  const t = useTranslations("Footer");
+
+  console.log("t" + t("quotes"));
 
 // Efek ini sekarang hanya mengelola class pada body
   useEffect(() => {
@@ -55,7 +59,7 @@ export default function ClientProviders({
         <Header />
         {children}
         <Footer />
-        <StickyFooter />
+        <StickyFooter quotes={t("quotes")} />
       </Aoscompo>
       <ScrollToTop />
     </ThemeProvider>

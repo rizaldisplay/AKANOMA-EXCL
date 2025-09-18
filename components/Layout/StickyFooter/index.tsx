@@ -22,7 +22,11 @@ const Container: React.FC<React.PropsWithChildren<{ className?: string }>> = ({ 
     <div className={["container mx-auto max-w-6xl py-10 px-4 md:px-6 lg:px-8 ", className].join(" ")}>{children}</div>
 );
 
-const StickyFooter = () => (
+interface StickyFooterProps {
+  quotes: string;
+}
+
+const StickyFooter: React.FC<StickyFooterProps> = ({ quotes }) => (
     <div className="relative h-[400px] bottom-0 left-0 w-full bg-[#8B0000] text-black p-4 md:p-6 lg:p-8 z-50"
         style={{ clipPath: 'polygon(0% 0, 100% 0%, 100% 100%, 0 100%)' }}
     >
@@ -32,9 +36,7 @@ const StickyFooter = () => (
                     <div className="flex flex-col items-end gap-4 pt-[50px]">
                         <AsteriskIcon className="h-10 w-10 md:h-12 md:w-12" />
                         <p className="max-w-xs text-right text-sm font-semibold">
-                            Teknologi Trading Non‑Spekulatif Yang Menghilangkan
-                            Drama Dari Investasi Anda. Konsisten, Terukur,
-                            Dan Berbasis Sains.
+                            {quotes}
                         </p>
                     </div>
                     <h1 className="text-[16vw] font-bold leading-none font-black tracking-tighter md:text-[9vw] lg:text-[7vw] self-start pt-[20px]">AKANOMA</h1>
@@ -45,12 +47,5 @@ const StickyFooter = () => (
 );
 
 
-// --- Main Component ---
-const App = () => {
-    return (
-        <StickyFooter />
-    );
-};
-
-export default App;
+export default StickyFooter;
 
