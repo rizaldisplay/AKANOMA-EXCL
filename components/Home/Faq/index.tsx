@@ -46,7 +46,17 @@ const faqData = [
   },
 ];
 
-const Faq = () => {
+interface FaqItem {
+  question: string;
+  answer: string;
+}
+
+interface FaqProps {
+  title: string;
+  faq: FaqItem[];
+}
+
+const Faq: React.FC<FaqProps> = ({ title, faq }) => {
   const [openIndex, setOpenIndex] = useState(null);
 
   const toggleFAQ = (index: any) => {
@@ -63,11 +73,11 @@ const Faq = () => {
               Popular <span className="text-red-500">questions</span>
             </p>
             <h2 className="text-3xl md:text-4xl font-semibold mt-2 bg-gradient-to-r from-white to-white/70 bg-clip-text text-transparent">
-              Learn more about Akanoma
+              {title}
             </h2>
           </div>
           <div className="space-y-4">
-            {faqData.map((item, index) => (
+            {faq.map((item, index) => (
               <div
                 key={index}
                 className="bg-white/5 rounded-lg p-4 cursor-pointer transition-all duration-300"

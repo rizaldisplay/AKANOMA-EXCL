@@ -6,14 +6,18 @@ import Image from 'next/image'
 import { Icon } from '@iconify/react'
 import Logo from '../Header/Logo'
 
-const Footer: FC = () => {
+interface FooterProps {
+  title: string;
+}
+
+const Footer: React.FC<FooterProps> = ({ title }) => {
   return (
     <footer className='pt-16 bg-darkmode'>
       <div className='container px-4'>
         <div className='grid grid-cols-1 sm:grid-cols-11 lg:gap-20 md:gap-6 sm:gap-12 gap-6  pb-16'>
           <div className='lg:col-span-6 md:col-span-6 col-span-6 flex flex-col gap-10'>
             <Logo />
-            <p className='text-white/60'>Menjadi mitra tepercaya trader Indonesia melalui EA non-spekulatif yang akurat dan disiplin. Kami menerapkan trading korelasi, mengutamakan manajemen risiko terukur, serta menyediakan edukasi dan komunitas transparan demi pertumbuhan modal yang konsisten.</p>
+            <p className='text-white/60'>{title}</p>
             <div className='flex gap-6 items-center relative z-1'>
               <Link href='https://www.facebook.com/' className='group'>
                 <Icon

@@ -14,7 +14,8 @@
   "Services": {
     "title": "Pilih Model Kemitraan Kami",
     "subTitle": "Pilih model yang paling sesuai dengan preferensi dan tujuan investasi Anda.",
-    "service1": {
+    "service": [
+      {
       "title": "Sewa EA",
       "desc": "Untuk trader yang menginginkan kontrol penuh",
       "price": "$7/hari",
@@ -25,8 +26,7 @@
       "detail3": "VPS & Instalasi: Terpisah",
       "detail4": "Rebate: Hak penyedia",
       "detail5": "Kontrol Akun: Penuh"
-    },
-    "service2": {
+    },{
       "title": "Sharing Profit",
       "desc": "Untuk kemitraan jangka panjang yang menguntungkan",
       "price": "10%",
@@ -37,12 +37,12 @@
       "detail3": "Pilihan Broker : Bebas",
       "detail4": "Penarikan : Bulanan",
       "detail5": "Risk Management : Terkelola"
-    }
+    }]
   },
-  "Feateures": {
+  "Features": {
     "title": "Bukan Spekulasi Ini Sains Keseimbangan Pasar",
     "desc": "EA Akanoma menggunakan pendekatan Non-Speculative Trading Action— kami tidak menebak arah pasar, melainkan memanfaatkan ketidakseimbangan harga yang terjadi secara alamiah. Hasil? Profit yang stabil dan terukur, tanpa bergantung pada prediksi arah pasar atau analisis fundamental yang subjektif. Ini adalah trading berdasarkan matematika, bukan emosi.",
-    "feature": [
+    "featureData": [
         {
             "icon": "/images/timeline/icon-planning.svg",
             "title": "Profit dari Equilibrium",
@@ -75,10 +75,12 @@
   "Growing": {
     "title": "Pertumbuhan Stabil, Bukan Keberuntungan Sesaat",
     "desc": "Grafik kinerja EA Akanoma menunjukkan pertumbuhan ekuitas yang konsisten dari waktu ke waktu— bukti nyata dari strategi non-spekulatif yang kami terapkan.",
-    "point1": "Potensi 10% profit bulanan",
-    "point2": "24/7 Operasional aktif",
-    "point3": "35% Max floating loss",
-    "point4": "0% Intervensi emosi"
+    "growingData": [
+      {"title": "Potensi 10% profit bulanan"},
+      {"title": "24/7 Operasional aktif"},
+      {"title": "35% Max floating loss"},
+      {"title": "0% Intervensi emosi"}
+    ]
   },
   "TradingBalance": {
     "title": "Trading Balance",

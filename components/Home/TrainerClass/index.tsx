@@ -21,8 +21,19 @@ const teamMembers = [
 ];
 
 
+interface classItem {
+  title: string;
+}
+
+interface traidingBalanceProps {
+  title: string;
+  desc: string;
+  classList: classItem[];
+  detail: string;
+}
+
 // --- Main Component ---
-const App = () => {
+const TraidingBalance: React.FC<traidingBalanceProps> = ({ title, desc, classList, detail }) => {
   return (
     <section className='md:py-24 py-16' id='team'>
       <style>{`
@@ -51,18 +62,17 @@ const App = () => {
         <header className="max-w-3xl">
           <h2 className="text-balance text-4xl md:text-5xl font-bold tracking-tight">
             <span className="bg-gradient-to-r from-white to-white/70 bg-clip-text text-transparent">
-              Traiding Balance
+              {title}
             </span>
           </h2>
           <p className="mt-5 text-pretty leading-relaxed text-white/70">
-            Manfaatkan <span className="font-semibold text-white">2 akun broker atau lebih</span> dengan bonus
-            atau keuntungan tertentu. Sehingga, saat salah satu akun mengalami kerugian, dana akan otomatis masuk ke akun yang profit.
+            {desc}
           </p>
         </header>
 
         {/* Fitur / bullet list */}
         <ul className="mt-8 grid gap-4 sm:grid-cols-2">
-          {classData.map((item, idx) => (
+          {classList.map((item, idx) => (
             <li
               key={idx}
               className="group flex items-start gap-3 rounded-2xl border border-white/10 bg-white/5 p-4 transition-colors hover:border-white/20 hover:bg-white/10"
@@ -83,7 +93,7 @@ const App = () => {
         </ul>
 
         <p className='mt-6 text-pretty text-white/70'>
-          * Datang ke kantor kami, free trial 1 hari
+          * {detail}
         </p>
 
         {/* CTA */}
@@ -145,5 +155,5 @@ const App = () => {
   );
 };
 
-export default App;
+export default TraidingBalance;
 

@@ -12,6 +12,8 @@ import { Metadata } from 'next'
 import GlobalReach from '../components/Home/GlobalReach'
 import Faq from '../components/Home/Faq'
 
+import { useTranslations } from "next-intl";
+
 // Ganti URL dasar dengan domain website Anda yang sebenarnya
 const metadataBase = new URL('https://akanomaexc.id');
 
@@ -95,6 +97,13 @@ export const metadata: Metadata = {
 };
 
 export default function Home() {
+  const tServices = useTranslations("Services");
+  const tFeatures = useTranslations("Features");
+  const tQuotes = useTranslations("Quotes");
+  const tGrowing = useTranslations("Growing");
+  const tTraidingBalance = useTranslations("TradingBalance");
+  const tFooter = useTranslations("FAQ");
+
   return (
     <main>
       <Hero />
@@ -103,11 +112,11 @@ export default function Home() {
       {/* <Portfolio /> */}
       {/* <Perks /> */}
       <Services />
-      <TimeLine />
-      <Platform />
-      <Upgrade />
-      <Team />
-      <Faq/>
+      <TimeLine title={tFeatures("title")} desc={tFeatures("desc")} featureList={tFeatures.raw("featureData")} />
+      <Platform quotes={tQuotes("title")} />
+      <Upgrade title={tGrowing("title")} desc={tGrowing("desc")} growingList={tGrowing.raw("growingData")} />
+      <Team title={tTraidingBalance("title")} desc={tTraidingBalance("desc")} classList={tTraidingBalance.raw("classData")} detail={tTraidingBalance("detail")} />
+      <Faq title={tFooter("title")} faq={tFooter.raw("faqData")}/>
     </main>
   )
 }

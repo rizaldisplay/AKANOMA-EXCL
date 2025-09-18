@@ -22,8 +22,6 @@ export default function ClientProviders({
   const [loading, setLoading] = useState<boolean>(true);
   const t = useTranslations("Footer");
 
-  console.log("t" + t("quotes"));
-
 // Efek ini sekarang hanya mengelola class pada body
   useEffect(() => {
     if (loading) {
@@ -58,7 +56,7 @@ export default function ClientProviders({
       <Aoscompo>
         <Header />
         {children}
-        <Footer />
+        <Footer title={t("title")} />
         <StickyFooter quotes={t("quotes")} />
       </Aoscompo>
       <ScrollToTop />

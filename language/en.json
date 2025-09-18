@@ -39,10 +39,10 @@
       "detail5": "Risk Management: Managed"
     }
   },
-  "Feateures": {
+  "Features": {
     "title": "It's Not Speculation, It's the Science of Market Balance.",
     "desc": "The Akanoma EA uses a Non-Speculative Trading Action approach—we don't guess the market's direction, but rather capitalize on naturally occurring price imbalances. The result? Stable and measurable profits, without relying on market direction predictions or subjective fundamental analysis. This is trading based on mathematics, not emotion.",
-    "feature": [
+    "featureData": [
       {
         "icon": "/images/timeline/icon-planning.svg",
         "title": "Profit from Equilibrium",
@@ -75,10 +75,12 @@
   "Growing": {
     "title": "Stable Growth, Not Momentary Luck",
     "desc": "The performance chart of the Akanoma EA shows consistent equity growth over time—real evidence of the non-speculative strategy we apply.",
-    "point1": "Potential 10% monthly profit",
-    "point2": "24/7 Operational active",
-    "point3": "35% Max floating loss",
-    "point4": "0% Emotion intervention"
+     "growingData": [
+      {"title": "Potential 10% monthly profit"},
+      {"title": "24/7 Operational active"},
+      {"title": "35% Max floating loss"},
+      {"title": "0% Emotion intervention"}
+    ]
   },
   "TradingBalance": {
     "title": "Trading Balance",

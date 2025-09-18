@@ -4,15 +4,41 @@ import { timelineData } from '../../../app/api/data'
 import { motion, useInView } from 'framer-motion'
 import { useRef } from 'react'
 
-const TimeLine = () => {
+interface featureItem {
+  icon: string;
+  title: string;
+  text: string;
+  position?: string;
+}
+
+interface featureProps {
+  title: string;
+  desc: string;
+  featureList: featureItem[];
+}
+
+const Features: React.FC<featureProps> = ({ title, desc, featureList }) => {
   const ref = useRef(null)
   const inView = useInView(ref)
-
   const TopAnimation = {
     initial: { y: '-100%', opacity: 0 },
     animate: inView ? { y: 0, opacity: 1 } : { y: '-100%', opacity: 0 },
     transition: { duration: 0.6, delay: 0.4 },
   }
+
+  const title1 = featureList[0]?.title || '';
+  const desc1  = featureList[0]?.text || '';
+
+  const title2 = featureList[1]?.title || '';
+  const desc2  = featureList[1]?.text || '';
+
+  const title3 = featureList[2]?.title || '';
+  const desc3  = featureList[2]?.text || '';
+
+  const title4 = featureList[3]?.title || '';
+  const desc4  = featureList[3]?.text || '';
+
+
 
   return (
     <section className='md:pt-40 pt-9' id='development'>
@@ -27,12 +53,10 @@ const TimeLine = () => {
                 We deliver <span className='text-red-500'>best solution</span>
               </p>
               <h2 className='bg-gradient-to-r from-white to-white/70 bg-clip-text text-transparent sm:text-40 text-30 font-medium lg:w-80% mx-auto'>
-                Bukan Spekulasi Ini Sains Keseimbangan Pasar
+                {title}
               </h2>
               <p className='text-[#D9D9D9] lg:w-80% mx-auto mb-20'>
-                EA Akanoma menggunakan pendekatan Non-Speculative Trading Action— kami tidak menebak arah pasar, melainkan memanfaatkan ketidakseimbangan harga yang terjadi secara alamiah.
-
-                Hasil? Profit yang stabil dan terukur, tanpa bergantung pada prediksi arah pasar atau analisis fundamental yang subjektif. Ini adalah trading berdasarkan matematika, bukan emosi.
+                {desc}
               </p>
             </div>
           </motion.div>
@@ -52,9 +76,9 @@ const TimeLine = () => {
               </div>
               <div className='absolute lg::top-40 top-36 lg:left-0 -left-20 w-72 flex items-center gap-6'>
                 <div className='text-right'>
-                  <h5 className='text-muted text-28 mb-3'>Profit dari Equilibrium</h5>
+                  <h5 className='text-muted text-28 mb-3'>{title1}</h5>
                   <p className='text-18 text-muted/60'>
-                    Untung konsisten dalam kondisi sideways
+                    {desc1}
                   </p>
                 </div>
                 <div className='bg-light_grey/45 backdrop-blur-xs px-6 py-2 h-fit rounded-full'>
@@ -77,17 +101,17 @@ const TimeLine = () => {
                   />
                 </div>
                 <div className='text-left'>
-                  <h5 className='text-muted text-28 mb-3'>Scale and Konsistensi Matematis</h5>
+                  <h5 className='text-muted text-28 mb-3'>{title2}</h5>
                   <p className='text-18 text-muted/60'>
-                    Berdasarkan perhitungan ilmiah, bukan spekulasi atau analisis subjektif.
+                    {desc2}
                   </p>
                 </div>
               </div>
               <div className='absolute lg:bottom-48 bottom-36 lg:left-0 -left-20 w-72 flex items-center gap-6'>
                 <div className='text-right'>
-                  <h5 className='text-muted text-28 mb-3'>Zero Emosi</h5>
+                  <h5 className='text-muted text-28 mb-3'>{title3}</h5>
                   <p className='text-18 text-muted/60'>
-                    Keputusan trading murni logika, tanpa emosi
+                    {desc3}
                   </p>
                 </div>
                 <div className='bg-light_grey/45 backdrop-blur-xs px-6 py-2 h-fit rounded-full'>
@@ -112,16 +136,16 @@ const TimeLine = () => {
                 </div>
                 <div className='text-left'>
                   <h5 className='text-muted text-nowrap text-28 mb-3'>
-                    Eksekusi Milidetik
+                    {title4}
                   </h5>
                   <p className='text-18 text-muted/60'>
-                    Algoritma canggih eksekusi peluang lebih cepat dari trader manual
+                    {desc4}
                   </p>
                 </div>
               </div>
             </div>
             <div className='grid sm:grid-cols-2 gap-8 md:hidden'>
-              {timelineData.map((item, index) => (
+              {featureList.map((item, index) => (
                 <div key={index} className='flex items-center gap-6'>
                   <div className='bg-light_grey/45 p-6 rounded-full'>
                     <Image
@@ -145,4 +169,4 @@ const TimeLine = () => {
   )
 }
 
-export default TimeLine
+export default Features

@@ -2,7 +2,18 @@ import { upgradeData } from '../../../app/api/data'
 import Image from 'next/image'
 import { Icon } from '@iconify/react'
 
-const Upgrade = () => {
+
+interface growingItem {
+  title: string;
+}
+
+interface growingProps {
+  title: string;
+  desc: string;
+  growingList: growingItem[];
+}
+
+const Growing: React.FC<growingProps> = ({ title, desc, growingList }) => {
   return (
     <section className='py-20' id='upgrade'>
       <div className='container px-4'>
@@ -10,13 +21,13 @@ const Upgrade = () => {
           <div>
             <p className='text-white font-medium'>Strategy <span className='text-red-500'>growing</span></p>
             <h2 className='bg-gradient-to-r from-white to-white/70 bg-clip-text text-transparent sm:text-40 text-30  font-medium mb-5'>
-              Pertumbuhan Stabil, Bukan Keberuntungan Sesaat
+              {title}
             </h2>
             <p className='text-muted/60 text-18 mb-7'>
-              Grafik kinerja EA Akanoma menunjukkan pertumbuhan ekuitas yang konsisten dari waktu ke waktu— bukti nyata dari strategi non-spekulatif yang kami terapkan.
+              {desc}
             </p>
             <ul className="mt-8 grid gap-4 sm:grid-cols-2">
-              {upgradeData.map((item, idx) => (
+              {growingList.map((item, idx) => (
                 <li
                   key={idx}
                   className="group flex items-start gap-3 rounded-2xl border border-white/10 bg-white/5 p-4 transition-colors hover:border-white/20 hover:bg-white/10"
@@ -53,4 +64,4 @@ const Upgrade = () => {
   )
 }
 
-export default Upgrade
+export default Growing

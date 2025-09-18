@@ -1,7 +1,11 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
-const Platform = () => {
+interface quotesProps {
+  quotes: string;
+}
+
+const Quotes: React.FC<quotesProps> = ({ quotes }) => {
   return (
     <section className='md:pt-44 sm:pt-24 pt-12 relative z-1'>
       <div className='container px-4'>
@@ -9,7 +13,7 @@ const Platform = () => {
           <div className='lg:col-span-8 col-span-12'>
             <h2 className='text-white sm:text-40 text-30 mb-6'>
               <blockquote className='border-l-4 border-primary pl-6 italic'>
-                "Trading bukan tentang benar atau salah, tapi tentang manajemen risiko."
+                {quotes}
               </blockquote>
             </h2>
           </div>
@@ -19,4 +23,4 @@ const Platform = () => {
   )
 }
 
-export default Platform
+export default Quotes
