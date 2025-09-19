@@ -3,7 +3,15 @@ import Image from 'next/image'
 import { motion, useInView } from 'framer-motion'
 import { useRef } from 'react'
 
-const Work = () => {
+
+interface workProps {
+  title: string;
+  subtitle: string;
+  desc: string;
+  desc2: string;
+}
+
+const Work: React.FC<workProps> = ({ title, subtitle, desc, desc2 }) => {
   const ref = useRef(null)
   const inView = useInView(ref)
 
@@ -47,18 +55,17 @@ const Work = () => {
                 Why choose <span className='text-red-500'>Akanoma</span>
               </p>
               <h1 className='sm:text-40 text-[30px] bg-gradient-to-r from-white to-white/70 bg-clip-text text-transparent lg:w-full md:w-70% font-medium'>
-                Pasar Adalah Medan Perang Emosi.<br />
-                <span className='bg-gradient-to-r from-white to-white/70 bg-clip-text text-transparent'>Saatnya Bertindak Berbeda.</span>
+                {title}<br />
+                <span className='bg-gradient-to-r from-white to-white/70 bg-clip-text text-transparent'>{subtitle}</span>
               </h1>
             </div>
             <div>
               {/* Lebar paragraf juga diubah agar mengisi kontainer baru */}
               <p className='text-white/70 mt-6 lg:w-full'>
-               Pasar keuangan penuh dengan ketidakpastian. Jutaan trader berusaha membaca grafik dan berita, namun sering kali emosi justru menghancurkan modal.
+                {desc}
               </p> <br />
               <p className='text-white/70 lg:w-full'>
-              Faktanya, 80% kesuksesan trading ditentukan oleh psikologi—bukan hanya analisis. Ketakutan dan keserakahan adalah musuh utama.
-              Kami di Akanoma juga pernah merasakannya. Kehilangan modal karena panic selling dan revenge trading. Dari pengalaman pahit itulah, kami membangun sistem yang berbeda—sebuah solusi yang menghapus faktor emosi dari persamaan trading.
+                {desc2}
               </p>
             </div>
           </motion.div>

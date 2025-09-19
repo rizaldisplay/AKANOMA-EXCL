@@ -9,6 +9,7 @@ import { ThemeProvider } from "next-themes";
 import Header from "./Layout/Header";
 import Footer from "./Layout/Footer";
 import StickyFooter from "./Layout/StickyFooter";
+import WaButton from "./WaButton";
 import ScrollToTop from "./ScrollToTop";
 import Aoscompo from "../utils/aos";
 import LoadingScreen from "./LoadingScreen";
@@ -59,6 +60,14 @@ export default function ClientProviders({
         <Footer title={t("title")} />
         <StickyFooter quotes={t("quotes")} />
       </Aoscompo>
+      <WaButton
+          phone="6285819807572" // Ganti dengan nomor WhatsApp Anda tanpa tanda +
+          message="Halo, saya ingin berkonsultasi dengan Akanoma Exclusive."
+          position="br" // br | bl | tr | tl
+          size="lg" // sm | md | lg
+          className="mb-16" // Tambahan margin bottom untuk menghindari tab scroll
+          tooltip="Chat sekarang"
+        />
       <ScrollToTop />
     </ThemeProvider>
   );

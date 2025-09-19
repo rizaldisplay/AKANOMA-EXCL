@@ -134,6 +134,8 @@ const Services: React.FC<servicesProps> = ({ title, subtitle, service }) => {
   const ref = useRef(null)
   const inView = useInView(ref)
 
+  console.log(service)
+
   return (
     <section className='md:pt-40 pt-9' id='development'>
       <div className='container lg:px-16 px-4'>
@@ -162,8 +164,8 @@ const Services: React.FC<servicesProps> = ({ title, subtitle, service }) => {
               {/* --- PERUBAHAN TATA LETAK DI SINI --- */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch max-w-4xl mx-auto">
                 {/* Mapping data ke komponen card */}
-                {plans.map((plan) => {
-                  const Icon = plan.icon;
+                {service.map((plan) => {
+                  const Icon = plan.icon === 'UserIcon' ? UserIcon : TeamIcon;
 
                   // Logika untuk styling dinamis berdasarkan properti plan
                   const cardClasses = `

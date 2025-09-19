@@ -7,9 +7,11 @@
     "subTitle": "Saatnya Bertindak Berbeda.",
     "desc": "Pasar keuangan penuh dengan ketidakpastian. Jutaan trader berusaha membaca grafik dan berita, namun sering kali emosi justru menghancurkan modal.",
     "desc2": "Faktanya, 80% kesuksesan trading ditentukan oleh psikologi—bukan hanya analisis. Ketakutan dan keserakahan adalah musuh utama. Kami di Akanoma juga pernah merasakannya. Kehilangan modal karena panic selling dan revenge trading. Dari pengalaman pahit itulah, kami membangun sistem yang berbeda—sebuah solusi yang menghapus faktor emosi dari persamaan trading.",
-    "info1": "Trader kehilangan modal dalam 2 tahun pertama",
-    "info2": "Kegagalan trading disebabkan faktor psikologi",
-    "info3": "Volume harian pasar forex global"
+     "data": [
+      { "id": 1, "count": 90, "postfix": "%", "title": "Trader kehilangan modal dalam 2 tahun pertama", "decimal": false },
+      { "id": 1, "count": 80, "postfix": "%", "title": "Kegagalan trading disebabkan faktor psikologi", "decimal": false },
+      { "id": 1, "count": 6.6, "prefix": "$", "postfix": "T", "title": "Volume harian pasar forex global", "decimal": true  }
+    ]
   },
   "Services": {
     "title": "Pilih Model Kemitraan Kami",
@@ -19,11 +21,12 @@
       "name": "Sewa EA",
       "icon": "/images/icons/icon-rent.svg",
       "description": "Untuk trader yang menginginkan kontrol penuh",
-      "price": "$7/hari",
+      "price": "7/hari",
       "priceDetails": "per $2000 deposit minimum",
       "buttonText": "Pantau EA dari akun Investor",
       "buttonVariant": "primary",
       "isHighlighted": true,
+      "subtext": "Biaya Sewa Harian",
       "features": [
         "Biaya Gas Awal : $140",
         "VPS & Instalasa : Terpisah",

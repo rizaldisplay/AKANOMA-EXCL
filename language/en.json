@@ -7,9 +7,12 @@
     "subTitle": "It's Time to Act Differently.",
     "desc": "Financial markets are full of uncertainty. Millions of traders try to read charts and news, but often emotions destroy their capital.",
     "desc2": "In fact, 80% of trading success is determined by psychology—not just analysis. Fear and greed are the main enemies. We at Akanoma have felt it too. Losing capital due to panic selling and revenge trading. From that bitter experience, we built a different system—a solution that removes the emotional factor from the trading equation.",
-    "info1": "Traders lose capital in the first 2 years",
-    "info2": "Trading failures are caused by psychological factors",
-    "info3": "Global forex market daily volume"
+    "data": [
+      { "id": 1, "count": 90, "postfix": "%", "title": "Traders lose capital in the first 2 years", "decimal": false },
+      { "id": 1, "count": 80, "postfix": "%", "title": "Trading failures are caused by psychological factors", "decimal": false },
+      { "id": 1, "count": 6.6, "prefix": "$", "postfix": "T", "title": "Global forex market daily volume", "decimal": true  }
+    ]
+
   },
   "Services": {
     "title": "Choose Our Partnership Model",
@@ -17,9 +20,9 @@
      "service": [
       {
       "name": "EA Rental",
-      "icon": "/images/icons/icon-rent.svg",
+      "icon": "UserIcon",
       "description": "For traders who want full control",
-      "price": "$7/day",
+      "price": "7/day",
       "priceDetails": "$2000 minimum deposit",
       "buttonText": "Monitor EA from Investor Account",
       "buttonVariant": "primary",
@@ -34,7 +37,7 @@
       ]
     },{
       "name": "Profit Sharing",
-      "icon": "/images/icons/icon-rent.svg",
+      "icon": "TeamIcon",
       "description": "For long-term profitable partnerships",
       "price": "10%",
       "priceDetails": "of monthly net profit",

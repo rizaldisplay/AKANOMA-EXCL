@@ -97,6 +97,8 @@ export const metadata: Metadata = {
 };
 
 export default function Home() {
+  const tHero = useTranslations("Hero");
+  const tAkanoma = useTranslations("WhyAkanoma");
   const tServices = useTranslations("Services");
   const tFeatures = useTranslations("Features");
   const tQuotes = useTranslations("Quotes");
@@ -106,10 +108,10 @@ export default function Home() {
 
   return (
     <main>
-      <Hero />
-      <Work />
-      <GlobalReach/>
-      <Services title={tServices("title")} subtitle={tServices("subtitle")} service={tServices.raw("service")} />
+      <Hero title={tHero("heroDesc")} />
+      <Work title={tAkanoma.raw("title")} subtitle={tAkanoma.raw("subTitle")} desc={tAkanoma.raw("desc")} desc2={tAkanoma.raw("desc2")} />
+      <GlobalReach data={tAkanoma.raw("data")} />
+      <Services title={tServices("title")} subtitle={tServices("subTitle")} service={tServices.raw("service")} />
       <TimeLine title={tFeatures("title")} desc={tFeatures("desc")} featureList={tFeatures.raw("featureData")} />
       <Platform quotes={tQuotes("title")} />
       <Upgrade title={tGrowing("title")} desc={tGrowing("desc")} growingList={tGrowing.raw("growingData")} />

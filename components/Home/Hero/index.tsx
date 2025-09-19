@@ -10,7 +10,11 @@ import { useEffect, useRef, useState, useCallback } from "react";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import BrandLogo from "../BrandLogo";
 
-const Hero = () => {
+interface heroProps {
+  title: string;
+}
+
+const Hero: React.FC<heroProps> = ({ title }) => {
   const [isBuying, setIsBuyingOpen] = useState(false);
   const [isSelling, setIsSellingOpen] = useState(false);
   const BuyRef = useRef<HTMLDivElement>(null);
@@ -77,9 +81,7 @@ const Hero = () => {
                 Trading No Drama
               </h1>
               <p className="text-white">
-                Ciptakan pertumbuhan konsisten melalui strategi 
-                  non-spekulatif berbasis algoritma, yang dirancang untuk 
-                    trader baru maupun berpengalaman.
+                {title}
               </p>
             </div>
             <div className="flex items-center md:justify-start justify-center gap-8">
