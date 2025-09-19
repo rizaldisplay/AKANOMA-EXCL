@@ -109,9 +109,7 @@ export default function Home() {
       <Hero />
       <Work />
       <GlobalReach/>
-      {/* <Portfolio /> */}
-      {/* <Perks /> */}
-      <Services />
+      <Services title={tServices("title")} subtitle={tServices("subtitle")} service={tServices.raw("service")} />
       <TimeLine title={tFeatures("title")} desc={tFeatures("desc")} featureList={tFeatures.raw("featureData")} />
       <Platform quotes={tQuotes("title")} />
       <Upgrade title={tGrowing("title")} desc={tGrowing("desc")} growingList={tGrowing.raw("growingData")} />

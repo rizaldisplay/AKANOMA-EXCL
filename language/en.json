@@ -14,30 +14,41 @@
   "Services": {
     "title": "Choose Our Partnership Model",
     "subTitle": "Select the model that best suits your investment preferences and goals.",
-    "service1": {
-      "title": "EA Rental",
-      "desc": "For traders who want full control",
+     "service": [
+      {
+      "name": "EA Rental",
+      "icon": "/images/icons/icon-rent.svg",
+      "description": "For traders who want full control",
       "price": "$7/day",
-      "priceDetail": "per $2000 minimum deposit",
-      "button": "Monitor EA from Investor Account",
-      "detail1": "Daily Rental Fee",
-      "detail2": "Initial Gas Fee: $140",
-      "detail3": "VPS & Installation: Separate",
-      "detail4": "Rebate: Provider's right",
-      "detail5": "Account Control: Full"
-    },
-    "service2": {
-      "title": "Profit Sharing",
-      "desc": "For long-term profitable partnerships",
+      "priceDetails": "$2000 minimum deposit",
+      "buttonText": "Monitor EA from Investor Account",
+      "buttonVariant": "primary",
+      "isHighlighted": true,
+      "subtext": "Daily Rental Fee",
+      "features": [
+        "Initial Fee: $140",
+        "VPS & Installation: Separate",
+        "Rebate: Provider's right",
+        "Withdrawal: Anytime",
+        "Account Control: Full"
+      ]
+    },{
+      "name": "Profit Sharing",
+      "icon": "/images/icons/icon-rent.svg",
+      "description": "For long-term profitable partnerships",
       "price": "10%",
-      "priceDetail": "of monthly net profit",
-      "button": "Choose Profit Sharing",
-      "detail1": "Profit Share",
-      "detail2": "Setup Fee: IDR 300,000",
-      "detail3": "Broker Choice: Flexible",
-      "detail4": "Withdrawal: Monthly",
-      "detail5": "Risk Management: Managed"
-    }
+      "priceDetails": "of monthly net profit",
+      "buttonText": "Choose Profit Sharing",
+      "buttonVariant": "primary",
+      "isHighlighted": true,
+      "subtext": "Profit Share",
+      "features": [
+        "Setup Fee: IDR 300,000",
+        "Broker Choice: Flexible",
+        "Withdrawal: Monthly",
+        "Risk Management: Managed"
+      ]
+    }]
   },
   "Features": {
     "title": "It's Not Speculation, It's the Science of Market Balance.",

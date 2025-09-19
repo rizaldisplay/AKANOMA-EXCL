@@ -110,9 +110,27 @@ const plans: PricingPlan[] = [
   },
 ];
 
+interface serviceItem {
+    name: string;
+    icon: string;
+    description: string;
+    price: string;
+    priceDetails: string;
+    buttonText: string;
+    buttonVariant: string;
+    isHighlighted: boolean;
+    subtext: string;
+    features: string[];
+}
+
+interface servicesProps {
+  title: string;
+  subtitle: string;
+  service: serviceItem[];
+}
 
 // --- Main Component ---
-const App = () => {
+const Services: React.FC<servicesProps> = ({ title, subtitle, service }) => {
   const ref = useRef(null)
   const inView = useInView(ref)
 
@@ -129,9 +147,9 @@ const App = () => {
                 Our <span className='text-red-500'>best service</span>
               </p>
               <h2 className='bg-gradient-to-r from-white to-white/70 bg-clip-text text-transparent sm:text-40 text-30 font-medium lg:w-80% mx-auto'>
-                Pilih Model Kemitraan Kami
+                {title}
               </h2>
-              <p className='text-[#D9D9D9]  lg:w-80% mx-auto mb-20'>Pilih model yang paling sesuai dengan preferensi dan tujuan investasi Anda</p>
+              <p className='text-[#D9D9D9]  lg:w-80% mx-auto mb-20'>{subtitle}</p>
             </div>
           </motion.div>
 
@@ -221,5 +239,5 @@ const App = () => {
   );
 };
 
-export default App;
+export default Services;
 

@@ -16,27 +16,37 @@
     "subTitle": "Pilih model yang paling sesuai dengan preferensi dan tujuan investasi Anda.",
     "service": [
       {
-      "title": "Sewa EA",
-      "desc": "Untuk trader yang menginginkan kontrol penuh",
+      "name": "Sewa EA",
+      "icon": "/images/icons/icon-rent.svg",
+      "description": "Untuk trader yang menginginkan kontrol penuh",
       "price": "$7/hari",
-      "priceDetail": "per $2000 deposit minimum",
-      "button": "Pantau EA dari akun Investor",
-      "detail1": "Biaya Sewa Harian",
-      "detail2": "Biaya Gas Awal: $140",
-      "detail3": "VPS & Instalasi: Terpisah",
-      "detail4": "Rebate: Hak penyedia",
-      "detail5": "Kontrol Akun: Penuh"
+      "priceDetails": "per $2000 deposit minimum",
+      "buttonText": "Pantau EA dari akun Investor",
+      "buttonVariant": "primary",
+      "isHighlighted": true,
+      "features": [
+        "Biaya Gas Awal : $140",
+        "VPS & Instalasa : Terpisah",
+        "Rebate : Hak penyedia",
+        "Penarikan: Kapan saja",
+        "Kontrol Akun : Penuh"
+      ]
     },{
-      "title": "Sharing Profit",
-      "desc": "Untuk kemitraan jangka panjang yang menguntungkan",
+      "name": "Sharing Profit",
+      "icon": "/images/icons/icon-rent.svg",
+      "description": "Untuk kemitraan jangka panjang yang menguntungkan",
       "price": "10%",
-      "priceDetail": "dari laba bersih bulanan",
-      "button": "Pilih Sharing Profit",
-      "detail1": "Bagi Hasil",
-      "detail2": "Biaya Setup : Rp 300.000",
-      "detail3": "Pilihan Broker : Bebas",
-      "detail4": "Penarikan : Bulanan",
-      "detail5": "Risk Management : Terkelola"
+      "priceDetails": "dari laba bersih bulanan",
+      "buttonText": "Pilih Sharing Profit",
+      "buttonVariant": "primary",
+      "isHighlighted": true,
+      "subtext": "Bagi Hasil",
+      "features": [
+        "Biaya Setup : Rp 300.000",
+        "Pilihan Broker : Bebas",
+        "Penarikan : Bulanan",
+        "Risk Management : Terkelola"
+      ]
     }]
   },
   "Features": {
