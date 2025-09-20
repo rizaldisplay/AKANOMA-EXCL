@@ -21,7 +21,7 @@
       "name": "Sewa EA",
       "icon": "/images/icons/icon-rent.svg",
       "description": "Untuk trader yang menginginkan kontrol penuh",
-      "price": "7/hari",
+      "price": "$7/hari",
       "priceDetails": "per $2000 deposit minimum",
       "buttonText": "Pantau EA dari akun Investor",
       "buttonVariant": "primary",
@@ -29,7 +29,7 @@
       "subtext": "Biaya Sewa Harian",
       "features": [
         "Biaya Gas Awal : $140",
-        "VPS & Instalasa : Terpisah",
+        "VPS & Instalasi : Terpisah",
         "Rebate : Hak penyedia",
         "Penarikan: Kapan saja",
         "Kontrol Akun : Penuh"

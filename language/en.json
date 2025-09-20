@@ -22,7 +22,7 @@
       "name": "EA Rental",
       "icon": "UserIcon",
       "description": "For traders who want full control",
-      "price": "7/day",
+      "price": "$7/day",
       "priceDetails": "$2000 minimum deposit",
       "buttonText": "Monitor EA from Investor Account",
       "buttonVariant": "primary",

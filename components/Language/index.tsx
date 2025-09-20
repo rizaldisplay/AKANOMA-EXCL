@@ -42,7 +42,7 @@ const EnglishFlag = () => (
 // --- End of SVG Komponen ---
 
 const Language = () => {
-  const [currentLang, setCurrentLang] = useState<'id' | 'en'>('en');
+  const [currentLang, setCurrentLang] = useState<'id' | 'en'>('id');
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
   const router = useRouter();
@@ -86,8 +86,6 @@ const Language = () => {
     document.cookie = `AKANOMA_LOCALE=${lang};`;
     router.refresh();
   };
-
-  console.log("Current Language:", currentLang);
 
   return (
     <div className={styles.headerActions}>

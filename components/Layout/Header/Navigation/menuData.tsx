@@ -1,9 +1,9 @@
 import { HeaderItem } from "../../../../types/menu";
 
 export const headerData: HeaderItem[] = [
-  { label: "Why Akanoma", href: "/#upgrade" },
-  { label: "Services", href: "/#portfolio" },
-  { label: "Features", href: "/#work" },
-  { label: "Traiding Balance", href: "/#development" },
+  { label: "Why Akanoma", href: "/#work" },
+  { label: "Services", href: "/#services" },
+  { label: "Features", href: "/#timeline" },
+  { label: "Traiding Balance", href: "/#team" },
   { label: "FAQs", href: "/#faq" },
 ];

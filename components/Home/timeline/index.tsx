@@ -41,7 +41,7 @@ const Features: React.FC<featureProps> = ({ title, desc, featureList }) => {
 
 
   return (
-    <section className='md:pt-40 pt-9' id='development'>
+    <section className='md:pt-40 pt-9' id='timeline'>
       <div className='container lg:px-16 px-4'>
         <div className='text-center'>
           <motion.div
@@ -125,7 +125,6 @@ const Features: React.FC<featureProps> = ({ title, desc, featureList }) => {
                 </div>
               </div>
               <div className='absolute lg:bottom-48 bottom-36 lg:right-0 -right-20 w-72 flex items-center gap-6'>
-                <div className='bg-light_grey/45 backdrop-blur-xs px-6 py-2 h-fit rounded-full'>
                   <Image
                     src='/images/solution/solution-icon-4.svg'
                     alt='Scale and support'
@@ -133,7 +132,6 @@ const Features: React.FC<featureProps> = ({ title, desc, featureList }) => {
                     height={44}
                     className='w-16 h-16'
                   />
-                </div>
                 <div className='text-left'>
                   <h5 className='text-muted text-nowrap text-28 mb-3'>
                     {title4}

@@ -137,7 +137,7 @@ const Services: React.FC<servicesProps> = ({ title, subtitle, service }) => {
   console.log(service)
 
   return (
-    <section className='md:pt-40 pt-9' id='development'>
+    <section className='md:pt-40 pt-9' id='services'>
       <div className='container lg:px-16 px-4'>
         <div className='text-center'>
           <motion.div
@@ -203,7 +203,7 @@ const Services: React.FC<servicesProps> = ({ title, subtitle, service }) => {
                         {/* Price Section */}
                         <div className="mt-8 flex items-baseline gap-2 mb-5">
                           <span className="text-5xl font-extrabold tracking-tight">
-                            ${plan.price}
+                            {plan.price}
                           </span>
                           {plan.priceDetails && (
                             <div className="flex flex-col text-xs text-white/60">
